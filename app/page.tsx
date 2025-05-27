@@ -1,12 +1,28 @@
-import Image from "next/image";
+
+import About from '@/components/About';
+import Blog from '@/components/Blog';
+import Brands from '@/components/Brands';
+import Classes from '@/components/Classes';
+import Hero from '@/components/Hero';
+import Membership from '@/components/Membership';
+import Team from '@/components/Team';
+import Testimonial from '@/components/Testimonial';
+
 
 export default function Home() {
   return (
+
     <main>
-    <h1 className="text-3xl bg-color-orange font-bold underline">
-      Hello world!
-    </h1>
-    <div className="w-10 h-10 bg-amber-300"></div>
+    <Hero/>
+    <About/>
+    <Classes/>
+    <Team/>
+    <Membership/>
+    <Testimonial/>
+    <Blog/>
+    <Brands/>
+    {/*temporary div */}
+    {/* <div className='h-[3000px]'></div> */}
     </main>
   );
 }
