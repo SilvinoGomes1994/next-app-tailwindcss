@@ -13,6 +13,7 @@ export default function Home() {
   return (
 
     <main>
+      
     <Hero/>
     <About/>
     <Classes/>

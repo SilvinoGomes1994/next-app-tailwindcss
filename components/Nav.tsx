@@ -18,11 +18,12 @@ const Nav = ({containerStyles} : {containerStyles: string}) => {
   {links.map((link, index) => {
     return (
 
-    <ScrollLink className="cursor-pointer hover:text-accent transition-all " offset={link.offset} to={link.target} smooth spy activeClass="active" key={index}> 
+    <ScrollLink offset={link.offset} to={link.target} smooth spy activeClass='active'  className= 'cursor-pointer hover:text-red-700 transition-all' key={index}> 
     {link.name} 
     </ScrollLink>
 
-  )})}
+  )})
+  }
   </nav>
 
 )}
