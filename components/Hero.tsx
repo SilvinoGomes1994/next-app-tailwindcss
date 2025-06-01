@@ -1,5 +1,19 @@
-const Hero = () => {
-  return <section className="h-[80vh] lg:h-[912px] bg-blue-300" id="home">Hero</section>
-}
+import HeroSlider from "./HeroSlider";
 
-export default Hero
+const Hero = () => {
+  return (
+    <section
+      className="h-[80vh] lg:h-[912px] bg-blue-300 bg-hero bg-cover bg-center bg-no-repeat"
+      id="home"
+    >
+      <div className="container mx-auto h-full">
+        {/* slider */}
+
+        <HeroSlider />
+        {/*bg-blue-300*/}
+      </div>
+    </section>
+  );
+};
+
+export default Hero;

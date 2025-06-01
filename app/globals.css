@@ -1,71 +1,93 @@
 @import "tailwindcss";
 
-
+/*
 :root{
   background-color: aquamarine;
-
 }
-
+*/
 
 @layer base {
-
   body {
     font-family: var(--font-roboto);
   }
 
-
-h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: var(--font-oswald);
-    font-weight:  var(--font-bold);
+    font-weight: var(--font-bold);
     text-transform: var(--uppercase);
-   /* @apply font-oswald font-bold uppercase;*/
+    /* @apply font-oswald font-bold uppercase;*/
   }
 
-  .h1{
-    color: var(--text-white);
-    font-size: var(--text-7xl) /* 4.5rem = 72px */;
-    line-height: var(--tw-leading, var(--text-7xl--line-height) /* 1 */);
-    @media (width >= 64rem /* 1024px */){
-        font-size: 128px;
-    }
-
-    --tw-tracking: -3px;
-    letter-spacing:  -3px;
-
-    @property --tw-tracking{
-        sintax: '*';
-        inherits: false;
-    }
-
-  }
-
-/*
-  .h1 {
+  /*
+ .h1 {
     color: var(--text-white);
     @apply text-white text-7xl lg:text-[128px] tracking-[-3px];
   }
-*/
-  
-  .h2{
+  */
+
+  .h1 {
+    color: white;
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    /* 4.5rem = 72px */
+
+    line-height: 1em; /* 1 recomendado: de 0 ate 1.5 */
+
+
+    @media (width >= 64rem /* 1024px */) {
+      font-size: 128px;
+      letter-spacing: -3px;
+      /*text-transform: inherit*/
+      /*inherits: false;*/
+    }
+  }
+
+  .h2 {
     font-size: 36px;
   }
 
-  .h3{
+  .h3 {
     font-size: 32px;
   }
 
-  .h4{
+  .h4 {
     font-size: 26px;
   }
 
-  .h5{
+  .h5 {
     font-size: 22px;
   }
-
-
 }
 
 .active {
-    color: darkred; 
+  color: darkred;
   /* @apply text-accent;*/
+}
+
+.bg-hero {
+  background-image: url(../public/assets/img/hero/bg.PNG);
+  background-size: cover;
+}
+
+.bg-membership {
+  background-image: url(../public/assets/img/membership/bg.jpg);
+}
+
+.xsm\:bottom-5 {
+  @media (width < 30rem /* 640px */) {
+
+    padding-bottom: 1rem;
+
+    .h1{
+      font-size: 2.3rem;
+    }
+        
+    }
 }
