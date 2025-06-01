@@ -11,23 +11,47 @@ import "swiper/css/navigation";
 import CustomButton from "./CustomButton";
 import SwiperNavButtons from "./SwiperNavButtons";
 
+import { motion } from "framer-motion";
+import { fadeIn } from "@/lib/variants";
+
 const HeroSlider = () => {
   return (
     <Swiper className="h-full xsm:bottom-5">
+
       <SwiperSlide>
         <div className="h-full flex justify-end pt-25 ">
           <div className="flex flex-col items-center lg:items-start lg:max-w-[700px] ">
-            <h1 className="h1 text-center lg:text-left mb-2 lg:pt-0 mt-10">
+            <motion.h1
+              variants={fadeIn("up", 0.4)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.2 }}
+              className="h1 text-center lg:text-left mb-2 lg:pt-0 mt-10"
+            >
               <span>Where hard</span> work meets success
-            </h1>
-            <p className="text-white italic text-center lg:text-left mb-2">
+            </motion.h1>
+            <motion.p
+              variants={fadeIn("up", 0.6)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.2 }}
+              className="text-white italic text-center lg:text-left mb-2"
+            >
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Blanditiis voluptas dicta quaerat.
-            </p>
-            <CustomButton
-              text="Get Started"
-              containerStayles="w-[196px] h-[62px]"
-            />
+            </motion.p>
+
+            <motion.div
+              variants={fadeIn("up", 0.8)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.2 }}
+            >
+              <CustomButton
+                text="Get Started"
+                containerStayles="w-[196px] h-[62px]"
+              />
+            </motion.div>
           </div>
         </div>
       </SwiperSlide>
@@ -36,21 +60,40 @@ const HeroSlider = () => {
       <SwiperSlide>
         <div className="h-full flex justify-end pt-25 ">
           <div className="flex flex-col items-center lg:items-start lg:max-w-[700px] ">
-            <h1 className="h1 text-center lg:text-left mb-2 lg:pt-0 mt-10">
+            <motion.h1
+              variants={fadeIn("up", 0.4)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.2 }}
+              className="h1 text-center lg:text-left mb-2 lg:pt-0 mt-10"
+            >
               <span>Where hard</span> work meets success
-            </h1>
-            <p className="text-white italic text-center lg:text-left mb-2">
+            </motion.h1>
+            <motion.p
+              variants={fadeIn("up", 0.6)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.2 }}
+              className="text-white italic text-center lg:text-left mb-2"
+            >
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Blanditiis voluptas dicta quaerat.
-            </p>
-            <CustomButton
-              text="Get Started"
-              containerStayles="w-[196px] h-[62px]"
-            />
+            </motion.p>
+
+            <motion.div
+              variants={fadeIn("up", 0.8)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.2 }}
+            >
+              <CustomButton
+                text="Get Started"
+                containerStayles="w-[196px] h-[62px]"
+              />
+            </motion.div>
           </div>
         </div>
       </SwiperSlide>
-      
 
       {/* swiper nav buttons */}
       <SwiperNavButtons
