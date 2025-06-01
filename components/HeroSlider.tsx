@@ -19,7 +19,7 @@ const HeroSlider = () => {
     <Swiper className="h-full xsm:bottom-5">
 
       <SwiperSlide>
-        <div className="h-full flex justify-end pt-25 ">
+        <div className="h-full flex justify-end pt-25">
           <div className="flex flex-col items-center lg:items-start lg:max-w-[700px] ">
             <motion.h1
               variants={fadeIn("up", 0.4)}
@@ -55,7 +55,6 @@ const HeroSlider = () => {
           </div>
         </div>
       </SwiperSlide>
-
 
       <SwiperSlide>
         <div className="h-full flex justify-end pt-25 ">
@@ -104,6 +103,7 @@ const HeroSlider = () => {
     </Swiper>
   );
 };
+
 
 {
   /* text-white uppercase */

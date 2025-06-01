@@ -8,7 +8,7 @@
 
 @layer base {
   body {
-    font-family: var(--font-roboto);
+    font-family: roboto;
   }
 
   h1,
@@ -17,9 +17,9 @@
   h4,
   h5,
   h6 {
-    font-family: var(--font-oswald);
-    font-weight: var(--font-bold);
-    text-transform: var(--uppercase);
+    font-family: oswald;
+    font-weight: bold;
+    text-transform: uppercase;
     /* @apply font-oswald font-bold uppercase;*/
   }
 
@@ -80,14 +80,33 @@
   background-image: url(../public/assets/img/membership/bg.jpg);
 }
 
+
 .xsm\:bottom-5 {
-  @media (width < 30rem /* 640px */) {
+
+  
+
+
+
+  @media (width < 39rem /* 640px */) {
 
     padding-bottom: 1rem;
 
     .h1{
-      font-size: 2.3rem;
+      font-size: 4.5rem;
     }
+    
         
     }
+
+@media (width < 18rem /* 640px */) {
+
+
+    .h1{
+      font-size: 3rem;
+    }
+    
+        
+    }
+
+
 }
