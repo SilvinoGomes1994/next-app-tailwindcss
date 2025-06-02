@@ -74,10 +74,13 @@
 .bg-hero {
   background-image: url(../public/assets/img/hero/bg.PNG);
   background-size: cover;
+  width: auto;
 }
 
 .bg-membership {
   background-image: url(../public/assets/img/membership/bg.jpg);
+  background-size: cover;
+  width: auto;
 }
 
 
@@ -86,8 +89,8 @@
   
 
 
-
-  @media (width < 39rem /* 640px */) {
+/* O.B.S: 1rem = 16px */
+  @media (width < 39rem /* 624px */) {
 
     padding-bottom: 1rem;
 
