@@ -38,7 +38,7 @@ const Header = () => {
             width={130}
             height={55}
             alt="logo-Fitness"
-            className="text-white w-auto"
+            className="text-white h-auto"
           />
         </Link>
         {/* Mobile Nav - hidden on large devices */}
