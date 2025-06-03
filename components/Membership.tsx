@@ -1,11 +1,39 @@
+"use client";
+
+import { motion } from "framer-motion";
+import { fadeIn } from "@/lib/variants";
+
+import MembershipSlider from "./MembershipSlider";
+
 const Membership = () => {
   return (
-    <section
-      className="h-screen bg-lime-300 bg-membership bg-cover bg-center bg-no-repeat"
+    <motion.section
+      variants={fadeIn("up", 0.2)}
+      initial="hidden"
+      whileInView={"show"}
+      viewport={{ once: false, amount: 0.2 }}
+      className="py-8 xl:py-0 lg:h-[95vh] bg-membership bg-cover bg-center relative before:w-full before:h-full before:bg-black/50 before:absolute before:top-0 before:z-10"
       id="prices"
     >
-      Membership
-    </section>
+      <div className="container mx-auto px-20 lg:px-30 text-white h-full flex flex-col xl:pt-25 relative z-20">
+        <motion.h2
+          variants={fadeIn("up", 0.4)}
+          initial="hidden"
+          whileInView={"show"}
+          className="h2 text-white text-center mb-8 lg:mb-2"
+        >
+          Membership
+        </motion.h2>
+        <motion.div
+          variants={fadeIn("up", 0.6)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.2 }}
+        >
+          <MembershipSlider />
+        </motion.div>
+      </div>
+    </motion.section>
   );
 };
 
