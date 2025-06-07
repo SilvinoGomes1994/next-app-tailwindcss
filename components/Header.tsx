@@ -28,17 +28,17 @@ const Header = () => {
     <header
       className={`${
         headerActive ? "h-[100px]" : "h-[124px]"
-      } fixed max-w-[1920px] top-0 w-full bg-zinc-950 h-[100px] transition-all z-50`}
+      } fixed max-w-[1920px] top-0 w-full bg-neutral-950/99 blur-[0.5px] h-[100px] transition-all z-50`}
     >
       <div className="container mx-auto h-full flex items-center justify-between">
         {/* logo */}
-        <Link href="">
+        <Link href="" className="">
           <Image
             src={"/assets/img/logo.png"}
-            width={130}
+            width={117}
             height={55}
             alt="logo-Fitness"
-            className="text-white h-auto"
+            className="text-white h-auto ml-3 lg:ml-0"
           />
         </Link>
         {/* Mobile Nav - hidden on large devices */}

@@ -4,15 +4,18 @@ import Image from "next/image";
 import { MdClose } from "react-icons/md";
 import { FaCheck } from "react-icons/fa6";
 
+import CustomButton from "./CustomButton";
+
 // import swiper components
 import { Swiper, SwiperSlide } from "swiper/react";
+
+//import required modules
+import { Pagination } from "swiper/modules";
 
 //swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination } from "swiper/modules";
-import { li } from "framer-motion/client";
-import CustomButton from "./CustomButton";
+
 
 //membership data
 const membershipData = [
@@ -136,17 +139,17 @@ const MembershipSlider = () => {
           spaceBetween: 30,
         },
       }}
-      className="min-h-[640px] lg:min-h-min "
+      className="min-h-[640px] lg:min-h-min"
     >
       {membershipData.map((item, index) => {
         return (
           <SwiperSlide key={index}>
-            <div className="border border-red-900 hover:bg-zinc-900/80 transition-all duration-300 max-w-sm xl:max-w-none mx-auto ">
+            <div className="border border-red-900 hover:bg-zinc-950/50 transition-all duration-300 w-full max-w-sm xl:max-w-none mx-auto">
               <div className=" py-3 xl:py-[5px] px-[60px] border-b border-red-900">
                 <h4 className="h4">{item.title}</h4>
               </div>
               {/* benefits */}
-              <div className="px-[30px] py-[15px] lg:py-[10px] lg:px-[20px]  ">
+              <div className="px-[30px] py-[15px] lg:py-[10px] lg:px-[20px]">
                 <ul className="flex flex-col gap-5 mb-5 lg:mb-5">
                   {item.benefits.map((item, index) => {
                     return (

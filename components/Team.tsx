@@ -39,8 +39,8 @@ const trainerData = [
   },
 
   {
-    image: "/assets/img/trainers/matt.jpg",
-    name: "Matt Stone",
+    image: "/assets/img/trainers/silvino.jpg",
+    name: "Silvino Gomes",
     role: "Body builder coach",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, ipsam praesentium.",
@@ -69,7 +69,7 @@ const trainerData = [
 
 const Team = () => {
   return (
-    <section className="py-12 xl:h-[110vh]" id="team">
+    <section className="py-12 xl:h-[110vh] bg-white" id="team">
       <div className="container mx-auto h-full flex flex-col items-center justify-center">
         <motion.h2 
         variants={fadeIn('up', 0.4)}
@@ -92,7 +92,7 @@ const Team = () => {
               >
                 {/* trainer image */}
                 <div className="relative w-[320px] h-[360px] mx-auto mb-4">
-                  <Image src={trainer.image} fill alt="" />
+                  <Image src={trainer.image} fill className="object-cover blur-[0.6px] brightness-90 grayscale-15 " alt="trainer" />
                 </div>
                 {/* trainer name */}
                 <h4 className="h4 mb-2">{trainer.name}</h4>

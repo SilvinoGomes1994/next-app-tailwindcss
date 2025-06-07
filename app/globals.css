@@ -72,22 +72,17 @@
 }
 
 .bg-hero {
-  background-image: url(../public/assets/img/hero/bg.PNG);
+  background-image: url(/assets/img/hero/bg.png);
   background-size: cover;
-  width: auto;
 }
 
 .bg-membership {
-  background-image: url(../public/assets/img/membership/bg.jpg);
+  background-image: url(/assets/img/membership/bg.jpg);
   background-size: cover;
-  width: auto;
 }
 
 
 .xsm\:bottom-5 {
-
-  
-
 
 /* O.B.S: 1rem = 16px */
   @media (width < 39rem /* 624px */) {
@@ -111,5 +106,13 @@
         
     }
 
+
+}
+
+
+/* swiper pagination styles*/
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  background-color: red;
 
 }

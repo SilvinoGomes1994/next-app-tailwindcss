@@ -15,7 +15,7 @@ const Membership = () => {
       className="py-8 xl:py-0 lg:h-[95vh] bg-membership bg-cover bg-center relative before:w-full before:h-full before:bg-black/50 before:absolute before:top-0 before:z-10"
       id="prices"
     >
-      <div className="container mx-auto px-20 lg:px-30 text-white h-full flex flex-col xl:pt-25 relative z-20">
+      <div className="container mx-auto px-0 lg:px-5 xl:px-30 text-white h-full flex flex-col xl:pt-25 relative z-20 ">
         <motion.h2
           variants={fadeIn("up", 0.4)}
           initial="hidden"

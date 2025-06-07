@@ -50,7 +50,7 @@ const Classes = () => {
             >
               {/* overlay */}
               <div className="bg-black/50 absolute w-full top-0 z-10"></div>
-              <Image src={item.img} fill className="object-cover" alt="" />
+              <Image src={item.img} fill className="object-cover " alt="" />
               {/* text & btn */}
               <div className="z-30 max-w-[380] text-center flex flex-col items-center justify-center gap-4">
                 <motion.h3
