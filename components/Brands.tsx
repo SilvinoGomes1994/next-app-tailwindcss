@@ -8,19 +8,19 @@ const brandImages = [
     href: "",
   },
   {
-    src: "/assets/img/brands/brand-2.png",
+    src: "/assets/img/brands/brand-2.jpg",
     href: "",
   },
   {
-    src: "/assets/img/brands/brand-3.png",
+    src: "/assets/img/brands/brand-3.jpg",
     href: "",
   },
   {
-    src: "/assets/img/brands/brand-4.png",
+    src: "/assets/img/brands/brand-4.jpg",
     href: "",
   },
   {
-    src: "/assets/img/brands/brand-5.png",
+    src: "/assets/img/brands/brand-5.jpg",
     href: "",
   },
 ];
@@ -66,13 +66,13 @@ const Brands = () => {
         >
           {brandImages.map((img, index) => {
             return (
-              <motion.div variants={brandItem} key={index}>
+              <motion.div variants={brandItem} key={index} className="w-[204px] h-[204px]">
                 <Link className="group" href={img.href}>
                   <Image
-                    className="opacity-50 group-hover:opacity-100 transition-all mx-auto"
+                    className="opacity-90 group-hover:opacity-100 transition-all mx-auto object-cover  w-full h-full pb-2"
                     src={img.src}
                     width={204}
-                    height={186}
+                    height={204}
                     alt=""
                   />
                 </Link>

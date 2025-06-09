@@ -131,7 +131,7 @@ const Blog = () => {
             })}
             <SwiperNavButtons
               containerStyles="absolute left-0 right-0 bottom-[16rem] w-full max-w-[370px] sm:max-w-[620px] md:max-w-[960px] xl:max-w-[1320px] mx-auto z-50 flex justify-between gap-1"
-              btnStyles=" bg-red-700 text-white w-[56px] h-[56px] flex justify-center items-center hover:bg-red-700 transition-all duration-300"
+              btnStyles=" bg-red-800 text-white w-[56px] h-[56px] flex justify-center items-center hover:bg-red-700 transition-all duration-300"
               iconStyles="text-2xl"
             />
           </Swiper>

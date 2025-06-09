@@ -8,7 +8,7 @@ import CustomButton from "./CustomButton";
 const classes = [
   {
     name: "body builder",
-    img: "/assets/img/classes/bodybuilding.jpg",
+    img: "/assets/img/classes/bodybuilding.webp",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo repellat, eum corporis exercitationem.",
   },
@@ -26,7 +26,7 @@ const classes = [
   },
   {
     name: "crossfit",
-    img: "/assets/img/classes/crossfit.jpg",
+    img: "/assets/img/classes/crossfit.webp",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo repellat, eum corporis exercitationem.",
   },
