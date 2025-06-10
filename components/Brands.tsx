@@ -62,7 +62,7 @@ const Brands = () => {
           initial="hidden"
           viewport={{ once: false, amount: 0.3 }}
           whileInView={"show"}
-          className="grid grid-cols-2 lg:grid-cols-5 py-8"
+          className="grid grid-cols-2 lg:grid-cols-5 py-20"
         >
           {brandImages.map((img, index) => {
             return (

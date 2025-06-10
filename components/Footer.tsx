@@ -43,7 +43,7 @@ const FooterItem = {
 
 const Footer = () => {
   return (
-    <footer className="bg-zinc-950 pt-24">
+    <footer className="bg-zinc-950 pt-24 px-5">
       <div className="container mx-auto pb-24">
         <motion.div
           variants={FooterContainerVariant}
