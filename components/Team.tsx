@@ -108,7 +108,7 @@ const Team = () => {
                     return (
                       <div key={index}>
                         <Link
-                          href={social.href}
+                          href={{pathname: social.href}}
                           className="hover:text-red-700 transition-all"
                         >
                           <social.icon className="text-lg" />

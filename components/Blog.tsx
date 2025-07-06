@@ -104,6 +104,7 @@ const Blog = () => {
             className="h-[430px] md:max-w-[660px] lg:max-w-none mb-8"
           >
             {blogData.map((post, index) => {
+
               return (
                 <SwiperSlide key={index}>
                   <div className="flex flex-col justify-start h-full max-w-[320px] mx-auto">
@@ -120,7 +121,7 @@ const Blog = () => {
                       </p>
                       <Link
                         className="hover:text-red-800 transition-all duration-300"
-                        href={post.href}
+                        href={{ pathname: post.href }}
                       >
                         <h5 className="h5">{post.title}</h5>
                       </Link>

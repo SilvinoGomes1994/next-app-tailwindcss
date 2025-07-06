@@ -32,7 +32,7 @@ const Header = () => {
     >
       <div className="container mx-auto h-full flex items-center justify-between">
         {/* logo */}
-        <Link href="" className="">
+        <Link href={{pathname: ""}} className="">
           <Image
             src={"/assets/img/logo.png"}
             width={117}

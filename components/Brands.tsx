@@ -67,7 +67,7 @@ const Brands = () => {
           {brandImages.map((img, index) => {
             return (
               <motion.div variants={brandItem} key={index} className="w-[204px] h-[204px]">
-                <Link className="group" href={img.href}>
+                <Link className="group" href={{ pathname: img.href }}>
                   <Image
                     className="opacity-90 group-hover:opacity-100 transition-all mx-auto object-cover  w-full h-full pb-2"
                     src={img.src}
