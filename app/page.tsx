@@ -19,8 +19,6 @@ export default function Home() {
       <Testimonial />
       <Blog />
       <Brands />
-      {/*temporary div */}
-      {/* <div className='h-[3000px]'></div> */}
     </main>
   );
 }
