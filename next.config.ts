@@ -11,6 +11,8 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,        // necessário para exportação estática
   },
+  basePath: '/next-app-tailwindcss',
+  assetPrefix: '/next-app-tailwindcss',
 };
 
 export default nextConfig;
