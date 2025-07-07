@@ -1,8 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: 'export',           // exportação estática
-  distDir: 'dist',             // pasta de build (opcional)
+  output: 'export',           // exportação estática            // pasta de build (opcional)
   reactStrictMode: true,      // boa prática
   trailingSlash: true,        // importante para exportação funcionar corretamente
   experimental: {
