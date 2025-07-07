@@ -1,6 +1,9 @@
 "use client";
+
 import Image from "next/image";
 import Link from "next/link";
+
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
 const brandImages = [
   {
@@ -70,7 +73,7 @@ const Brands = () => {
                 <Link className="group" href={{ pathname: img.href }}>
                   <Image
                     className="opacity-90 group-hover:opacity-100 transition-all mx-auto object-cover  w-full h-full pb-2"
-                    src={img.src}
+                    src={`${basePath}${img.src}`}
                     width={204}
                     height={204}
                     alt=""

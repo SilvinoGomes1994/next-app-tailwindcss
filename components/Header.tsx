@@ -6,6 +6,8 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { MdMenu } from "react-icons/md";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
 const Header = () => {
   const [headerActive, SetHeaderActive] = useState(false);
   const [openNav, setOpenNav] = useState(false);
@@ -34,7 +36,7 @@ const Header = () => {
         {/* logo */}
         <Link href={{pathname: ""}} className="">
           <Image
-            src={"/assets/img/logo.png"}
+            src={`${basePath}/assets/img/logo.png`}
             width={117}
             height={55}
             alt="logo-Fitness"

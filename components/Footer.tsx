@@ -15,6 +15,8 @@ import {
 import CustomButton from "./CustomButton";
 import { motion } from "framer-motion";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
 // variants
 const FooterContainerVariant = {
   hidden: {
@@ -56,10 +58,10 @@ const Footer = () => {
           <motion.div variants={FooterItem} className="flex flex-col gap-4">
             <Link href="#">
               <Image
-                src={"/assets/img/logo.png"}
+                src={`${basePath}/assets/img/logo.png`}
                 width={117}
                 height={55}
-                alt=""
+                alt="profs"
               />
             </Link>
             <p className="max-w-sm">
@@ -134,7 +136,7 @@ const Footer = () => {
               <Link className="w-[100px] h-[100px]" href="#">
                 <Image
                   className="object-cover w-full h-full"
-                  src={"/assets/img/trainers/01.jpg"}
+                  src={`${basePath}/assets/img/trainers/01.jpg`}
                   width={100}
                   height={100}
                   alt=""
@@ -143,7 +145,7 @@ const Footer = () => {
               <Link className="w-[100px] h-[100px]" href="#">
                 <Image
                   className="object-cover w-full h-full"
-                  src={"/assets/img/trainers/02.jpg"}
+                  src={`${basePath}/assets/img/trainers/02.jpg`}
                   width={100}
                   height={100}
                   alt=""
@@ -152,7 +154,7 @@ const Footer = () => {
               <Link className="w-[100px] h-[100px]" href="#">
                 <Image
                   className="object-cover w-full h-full"
-                  src={"/assets/img/trainers/03.webp"}
+                  src={`${basePath}/assets/img/trainers/03.webp`}
                   width={100}
                   height={100}
                   alt=""
@@ -161,7 +163,7 @@ const Footer = () => {
               <Link className="w-[100px] h-[100px]" href="#">
                 <Image
                   className="object-cover w-full h-full"
-                  src={"/assets/img/trainers/04.jpg"}
+                  src={`${basePath}/assets/img/trainers/04.jpg`}
                   width={100}
                   height={100}
                   alt=""
@@ -170,7 +172,7 @@ const Footer = () => {
               <Link className="w-[100px] h-[100px]" href="#">
                 <Image
                   className="object-cover w-full h-full"
-                  src={"/assets/img/trainers/05.webp"}
+                  src={`${basePath}/assets/img/trainers/05.webp`}
                   width={100}
                   height={100}
                   alt=""
@@ -179,7 +181,7 @@ const Footer = () => {
               <Link className="w-[100px] h-[100px]" href="#">
                 <Image
                   className="object-cover w-full h-full"
-                  src={"/assets/img/trainers/silvino.jpg"}
+                  src={`${basePath}/assets/img/trainers/silvino.jpg`}
                   width={100}
                   height={100}
                   alt=""
@@ -188,7 +190,7 @@ const Footer = () => {
               <Link className="w-[100px] h-[100px]" href="#">
                 <Image
                   className="object-cover w-full h-full"
-                  src={"/assets/img/trainers/rosy.jpg"}
+                  src={`${basePath}/assets/img/trainers/rosy.jpg`}
                   width={100}
                   height={100}
                   alt=""
@@ -197,7 +199,7 @@ const Footer = () => {
               <Link className="w-[100px] h-[100px]" href="#">
                 <Image
                   className="object-cover w-full h-full"
-                  src={"/assets/img/trainers/sofia.jpg"}
+                  src={`${basePath}/assets/img/trainers/sofia.jpg`}
                   width={100}
                   height={100}
                   alt=""

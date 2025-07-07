@@ -8,6 +8,7 @@ import CustomButton from "./CustomButton";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/lib/variants";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
 const trainerData = [
   {
@@ -92,7 +93,7 @@ const Team = () => {
               >
                 {/* trainer image */}
                 <div className="relative w-[320px] h-[360px] mx-auto mb-4">
-                  <Image src={trainer.image} fill className="object-cover blur-[0.6px] brightness-90 grayscale-15 " alt="trainer" />
+                  <Image src={`${basePath}${trainer.image}`} fill className="object-cover blur-[0.6px] brightness-90 grayscale-15 " alt="trainer" />
                 </div>
                 {/* trainer name */}
                 <h4 className="h4 mb-2">{trainer.name}</h4>

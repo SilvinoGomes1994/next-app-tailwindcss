@@ -1,8 +1,9 @@
 import type { NextConfig } from "next";
 
+const isProd= process.env.NODE_ENV === 'production';
+
 const nextConfig: NextConfig = {
   output: 'export',           // exportação estática
-  distDir: 'dist',             // pasta de build (opcional)
   reactStrictMode: true,      // boa prática
   trailingSlash: true,        // importante para exportação funcionar corretamente
   experimental: {
@@ -11,8 +12,8 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,        // necessário para exportação estática
   },
-  basePath: '/next-app-tailwindcss',
-  assetPrefix: '/next-app-tailwindcss',
+  basePath: isProd ? '/next-app-tailwindcss' : '',
+  assetPrefix:  isProd ? '/next-app-tailwindcss' : '',
 };
 
 export default nextConfig;

@@ -16,6 +16,10 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/lib/variants";
 
+//Meu Path para o caminho das imagens
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
+
 const blogData = [
   {
     img: "/assets/img/blog/post1.jpg",
@@ -109,7 +113,7 @@ const Blog = () => {
                 <SwiperSlide key={index}>
                   <div className="flex flex-col justify-start h-full max-w-[320px] mx-auto">
                     <Image
-                      src={post.img}
+                      src={`${basePath}${post.img}`}
                       width={320}
                       height={266}
                       alt=""

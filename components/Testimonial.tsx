@@ -13,6 +13,8 @@ import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
 //testimonial data
 const testimonialData = [
   {
@@ -98,7 +100,7 @@ const Testimonial = () => {
                   <div className="flex flex-col justify-center items-center gap-6 text-center h-full ">
                     {/*As imagens devem ser quadradas pra ficar bem com o rounded-full*/}
                     <Image
-                      src={person.img}
+                      src={`${basePath}${person.img}`}
                       width={90}
                       height={90}
                       alt=""
